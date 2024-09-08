@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center; color: black;'> Cars Analysis </h1>", unsafe_allow_html=True)
 st.image("https://brightdata.com/wp-content/uploads/2023/07/optimize_pricing_strategy.svg", caption="Cars Analyze ", use_column_width=True)
 
-df_EDA = pd.read_csv(r"E:\FINAL_PROJECT\Cars_EDA.csv")
+df_EDA = pd.read_csv(r"Cars_EDA.csv")
 col1, col2,col3 = st.columns([6,2,6])
 with col1:
     model_price = df_EDA.groupby('model')['price'].mean().sort_values(ascending=False)
