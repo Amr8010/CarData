@@ -3,15 +3,15 @@ import pickle
 import numpy as np
 import pandas as pd
 
+
 # Load dataset for unique values
 df = pd.read_csv("Cars_EDA.csv")
 
 # Load the model and preprocessor from pickle files
-with open('model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+model = pickle.load(open('model.pkl', 'rb'))
+preprocessor = pickle.load(open('preprocessor.pkl', 'rb'))
 
-with open('preprocessor.pkl', 'rb') as preprocessor_file:
-    preprocessor = pickle.load(preprocessor_file)
+
 
 # Custom CSS to improve styling
 st.markdown("""
