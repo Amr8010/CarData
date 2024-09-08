@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px 
-df = pd.read_csv(r"E:\FINAL_PROJECT\Cars.csv")
+df = pd.read_csv(r"Cars.csv")
 
 
 # Title of the app
